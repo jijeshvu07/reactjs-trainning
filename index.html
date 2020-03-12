@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  
+  <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+
+#profile{
+  width:20%;
+  height:20%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right; 
+}
+.center{
+    margin:0 auto;
+   display:inline-block
+}
+
+.container {
+    margin:  30px auto;
+    width: 1000px;
+}
+
+.container > div {
+    width: 33%;
+}
+.col1 {
+    float: left;
+	border: 2px solid black;
+
+}
+.col2 {
+    float: right;
+	border: 2px solid black;
+}
+.col3 {
+    margin: auto;
+	border: 2px solid black;
+}
+
+
+
+  </style>
+</head>
+<body style="background-color: #716969;">
+
+<ul>
+  <li><a href="#">HJ</a></li>
+  <li style="float: right;"><a href="#">Home</a></li>
+  <li style="float: right;"><a href="#">Contact</a></li>
+  <li style="float: right;"><a href="#">About</a></li>
+</ul>
+
+<br/>
+
+
+  
+  <div  align="center">
+  <img id="profile"src="https://upload.wikimedia.org/wikipedia/commons/1/19/World_Premiere_Logan_Berlinale_2017.jpg" alt="John" >
+  <h1>Hugh Jackman</h1>
+  <label>Java Full Stack Developer</label>
+</div>
+
+<br/>
+<br/>
+
+<div align="center"><u>Skills</u></div>
+
+
+  <div class="container">
+    <div class="col1">
+        Java
+    </div>
+    <div class="col2">
+       SpringBoot
+    </div>
+    <div class="col3">
+        AngularJS
+    </div>
+	<div class="col1">
+        Hibernate
+    </div>
+    <div class="col2">
+       SpringData JPA
+    </div>
+    <div class="col3">
+        Spring Microservices
+    </div>
+</div>
+
+
+
+<footer>
+   <div class="left">
+  <p>Location</p>
+    <p>Kochi</p>
+  </div>
+  <div class="right">
+    <p>Around the web</p>
+    <div>
+       <span style="border: 2px solid black">Fb</span>
+       <span style="border: 2px solid black">Tw</span>
+       <span style="border: 2px solid black">in</span>
+    </div>
+  </div>
+  <div class="center">
+    <p>About</p>
+    <p></p>
+  </div>
+  
+  
+</footer>
+
+</body>
+</html>
