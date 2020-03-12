@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HJ</title>
+  <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+  </style>
+ <script>
+    function validateForm() {
+      var name = document.forms["contact-form"]["cName"].value;
+      if (name == null || name == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      var name = document.forms["contact-form"]["cEmail"].value;
+      if (name == null || name == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+      var name = document.forms["contact-form"]["cAge"].value;
+      if (name == null || name == "") {
+        alert("Age must be filled out");
+        return false;
+      }
+      var name = document.forms["contact-form"]["cQuery"].value;
+      if (name == null || name == "") {
+        alert("Query must be filled out");
+        return false;
+      }
+    }
+    </script>
+  </head>
+ <body style="background-color: #716969;">
+
+<ul>
+  <li><a href="#">HJ</a></li>
+  <li style="float: right;"><a href="index.html">Home</a></li>
+  <li style="float: right;"><a href="contact-us.html">Contact</a></li>
+  <li style="float: right;"><a href="#">About</a></li>
+</ul>
+
+<br/>
+
+<form action="contact-us.html" method="post" name="contact-form" onsubmit="return validateForm()">
+
+
+  <table align="center" >
+    <tr>
+      <td><label>Name</label></td>
+      <td> <input type="text" name="cName" placeholder="Enter name"/></td>
+    </tr>
+    <tr>
+        <td><label>Email</label></td>
+        <td> <input type="email" name="cEmail" placeholder="Enter email"/></td>
+    </tr>
+    <tr>
+        <td><label>Age</label></td>
+        <td> <input type="number"  name="cAge" placeholder="Enter age"/></td>
+    </tr>
+    <tr>
+        <td><label>Query</label></td>
+        <td><textarea style="resize: none;" name="cQuery" rows="5" cols="50" type="number" placeholder="Enter query"></textarea></td>
+    </tr>
+    <tr>
+      <td><button>Submit</button></td>
+    </tr>
+	</table>
+  
+	
+	
+</form>
+
+
+</body>
+</html> 
